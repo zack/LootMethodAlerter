@@ -1,0 +1,7 @@
+## Interface: 11302
+## Author: Zack Youngren
+## Title: LootMethodAlerter
+## Version: 1.0
+## Notes: Alert the player when the loot method has been changed
+
+LootMethodAlerter.lua
