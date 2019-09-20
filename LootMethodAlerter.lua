@@ -43,7 +43,11 @@ local function onPartyLootMethodChanged(self, event, ...)
   local warning_message = "Loot method has been set to " .. loot_method_strings[lootmethod]
 
   if show_private_warning then
-    RaidNotice_AddMessage(RaidWarningFrame, "|cffff0000" .. "WARNING: " .. "|r" .. warning_message, ChatTypeInfo["RAID_WARNING"])
+    local red_text = "|cffff0000"
+    local white_text = "|r"
+    local raid_alert_message = red_text .. "WARNING: " .. white_text .. warning_message,
+
+    RaidNotice_AddMessage(RaidWarningFrame, raid_alert_message, ChatTypeInfo["RAID_WARNING"])
   end
 
   if play_private_sound then
